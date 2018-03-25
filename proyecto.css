@@ -1,0 +1,84 @@
+/* Color de fondo */
+body {
+    background: #cccccc;
+}
+/* -----------------------------------------------------------------------------*/
+/* BARRA DE NAVEGACIÓN
+ -----------------------------------------------------------------------------*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li[class="navegacion"]{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li a  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 36px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+/* -----------------------------------------------------------------------------*/
+/* REPRODUCTOR
+ -----------------------------------------------------------------------------*/
+.reproductor {
+    display: block;
+    background: #555555;
+    margin: 100px;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* -----------------------------------------------------------------------------*/
+/* PISTAS
+ -----------------------------------------------------------------------------*/
+ul[class="pista"] {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+li[class="pista"] {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    background-color: #008080;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    }
+
+li input {
+    float: right;
+}
+
+li div {
+    float: right;
+}
+/* -----------------------------------------------------------------------------*/
