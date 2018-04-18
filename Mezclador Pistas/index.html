@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MixCrowd</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">HOME</a></li>
+      <li><a href="#">STUDIO</a></li>
+      <li><a href="#">EXPLORE</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> User</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign</a></li>
+    </ul>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+
+
+
+<div class="background"></div>
+<section>
+  <div class="album-info">
+    <div class="album-art"><img src="https://target.scene7.com/is/image/Target/51223401?wid=520&amp;hei=520&amp;fmt=pjpeg"/>
+      <div class="actions">
+        <div class="play"><a href="#">MIX</a></div>
+        <div class="goBack"><a href="#">BACK</a></div>
+      </div>
+    </div>
+    <div class="album-details">
+      <h2> <img src="https://68.media.tumblr.com/avatar_edbd71e8c8ac_128.png"/>Skillet</h2>
+      <h1>Unleashed</h1><span> <span>Hard Rock </span><span>&copy; AUTOR: Fausto Rodriguez Callo</span></span>
+      <p>Unleashed is the tenth album by American Christian rock band Skillet, released on August 5, 2016. The album was announced on May 20, 2016, and a lyric video was released for the track "Feel Invincible" at the same time on the band's YouTube channel. Six days later, the band released a lyric video for the track "Stars" on their YouTube channel.</p>
+    </div>
+  </div>
+
+  <div class="audio-player">
+    <div id="play-btn"></div>
+    <div class="audio-wrapper" id="player-container" href="javascript:;">
+      <audio id="player" ontimeupdate="initProgressBar()">
+        <source src="http://www.lukeduncan.me/oslo.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    <div class="player-controls scrubber">
+      <p>Oslo <small>by</small> Holy Esque</p>
+      <span id="seekObjContainer">
+			  <progress id="seekObj" value="0" max="1"></progress>
+			</span>
+      <br>
+      <small style="float: left; position: relative; left: 15px;" class="start-time"></small>
+      <small style="float: right; position: relative; right: 20px;" class="end-time"></small>
+
+    </div>
+    <div class="album-image" style="background-image: url('https://artwork-cdn.7static.com/static/img/sleeveart/00/051/614/0005161476_350.jpg')"></div>
+  </div>
+
+
+  <div class="album-tracks">
+    <ol>
+      <li id="li1"> <span>Bajo</span>
+        <span>1:49  &nbsp;&nbsp;<input type="checkbox" id="test1" /> <label for="test1">Play</label>
+        <button class="erasebutton" onclick= "removeName('li1')"> ❌ </button>
+        </span></li>
+      <li id="li2"> <span>BeatBox freestyle</span>
+        <span>0:49  &nbsp;&nbsp;<input type="checkbox" id="test2" checked="checked"/> <label for="test2">Play</label>
+        <button class="erasebutton" onclick= "removeName('li2')"> ❌ </button>
+        </span></li>
+      <li id="li3"> <span>Bateria con bombo</span>
+        <span>0:47  &nbsp;&nbsp;<input type="checkbox" id="test3" /> <label for="test3">Play</label>
+        <button class="erasebutton" onclick= "removeName('li3')"> ❌ </button>
+        </span></li>
+      <li id="li4"> <span>Guitarra</span>
+        <span>0:28  &nbsp;&nbsp;<input type="checkbox" id="test4" checked="checked"/> <label for="test4">Play</label>
+        <button class="erasebutton" onclick= "removeName('li4')"> ❌ </button>
+        </span></li>
+      <li id="li5"> <span>Vocales</span>
+        <span>1:35  &nbsp;&nbsp;<input type="checkbox" id="test5" checked="checked"/> <label for="test5">Play</label>
+        <button class="erasebutton" onclick= "removeName('li5')"> ❌ </button>
+        </span></li>
+      <li id="li6"> <span>Caja</span>
+        <span>0:18  &nbsp;&nbsp;<input type="checkbox" id="test6" /> <label for="test6">Play</label>
+        <button class="erasebutton" onclick= "removeName('li6')"> ❌ </button>
+        </span></li>
+      <li id="li7"> <span>Flauta loop</span>
+        <span>1:24  &nbsp;&nbsp;<input type="checkbox" id="test7" /> <label for="test7">Play</label>
+        <button class="erasebutton" onclick= "removeName('li7')"> ❌ </button>
+        </span></li>
+      <li id="li8"> <span>Violin</span>
+        <span>2:00  &nbsp;&nbsp;<input type="checkbox" id="test8" checked="checked"/> <label for="test8">Play</label>
+        <button class="erasebutton" onclick= "removeName('li8')"> ❌ </button>
+        </span></li>
+      <li id="li9"> <span>Electro Base</span>
+        <span>0:16  &nbsp;&nbsp;<input type="checkbox" id="test9" checked="checked"/> <label for="test9">Play</label>
+        <button class="erasebutton" onclick= "removeName('li9')"> ❌ </button>
+        </span></li>
+    </ol>
+  </div>
+</section>
+</body>
+
+<script>
+
+    function removeName(itemid){
+        var item = document.getElementById(itemid);
+        item.parentNode.removeChild(item);
+    }
+
+
+
+</script>
+</html>
