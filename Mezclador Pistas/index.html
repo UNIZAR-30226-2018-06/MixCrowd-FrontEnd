@@ -77,8 +77,12 @@
   </div>
 
 
+  <br>
+  <div> <h2> <label id="seleccionarTodo" for="selectFile">Seleccionar Canción</label> </h2> </div>
+  <input id="selectFile" type="file" onclick="add_li()" value="anadir">                                       <!-- No es onClick -->
+
   <div class="album-tracks">
-    <ol>
+    <ol id="lista">
       <li id="li1"> <span>Bajo</span>
         <span>1:49  &nbsp;&nbsp;<input type="checkbox" id="test1" /> <label for="test1">Play</label>
         <button class="erasebutton" onclick= "removeName('li1')"> ❌ </button>
@@ -118,16 +122,27 @@
     </ol>
   </div>
 </section>
+
+<div class="comments">
+  <h4 Juaqo el carroñero </h4>
+  <p>
+    Este proyecto esta genial chicos, voy a recoger el aceite que pierdo! Yuhuuu!
+  </p>
+</div>
+
+<div class="container">
+  <form action="">
+
+    <label for="comentario">Comentario</label> <br/>
+    <textarea id="comentario" name="comentario" placeholder="Escriba su comentario..."  style="width:800px"></textarea>
+    <br/>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<br/><br/>
+
+
 </body>
 
-<script>
-
-    function removeName(itemid){
-        var item = document.getElementById(itemid);
-        item.parentNode.removeChild(item);
-    }
-
-
-
-</script>
 </html>

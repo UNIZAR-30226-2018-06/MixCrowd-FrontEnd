@@ -87,3 +87,54 @@ function initPlayers(num) {
 }
 
 initPlayers(jQuery('#player-container').length);
+
+
+
+
+
+function removeName(itemid){
+    var item = document.getElementById(itemid);
+    item.parentNode.removeChild(item);
+}
+
+/* choose button */////////////////////////////////////////////////
+
+document.querySelector("#selectFile").addEventListener('change', function (ev) {
+
+    // TO SEE THE NAME OF THE FILE IN THE CONSOLE BUT IS TRASH CODE BECAUSE A NORMAL USER DON'T HAVE THE CONSOLE OPEN.
+    // console.log(ev.target.files[0].name);
+
+    document.querySelector("[for='selectFile']").innerHTML = ev.target.files[0].name;
+
+});
+
+/////////////////////////////////////////////////////////////////////////////////// hasta ui button choose
+
+//// Añadir a la lista ///////////////////////////////////////////////////////////////
+function add_li()
+{
+    var nuevoLi=document.getElementById("selectFile").value;
+    if(nuevoLi.length>0)
+    {
+        if(find_li(nuevoLi))
+        {
+            var li=document.createElement('li');
+            li.id=nuevoLi;
+            li.innerHTML="<span>Nuevo</span> <span>1:49  &nbsp;&nbsp;<input type=\"checkbox\" id=\"test1\" /> <label for=\"test1\">Play</label> <button class=\"erasebutton\" onclick= \"removeName('li1')\"> ❌ </button> </span>" +nuevoLi;
+            document.getElementById("lista").appendChild(li);
+        }
+    }
+    return false;
+}
+
+
+function find_li(contenido)
+{
+    var el = document.getElementById("lista").getElementsByTagName("li");
+    for (var i=0; i<el.length; i++)
+    {
+        if(el[i].innerHTML==contenido)
+            return false;
+    }
+    return true;
+}

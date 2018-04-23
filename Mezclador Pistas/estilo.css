@@ -147,3 +147,33 @@ label:hover:before {
 .erasebutton {
 
 }
+
+
+
+#selectFile {
+  display: none;
+}
+
+div h2 label {
+  user-select: none;
+  background: #009688;
+  color: white;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  padding: 15px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+  transition: .5s;
+} label:hover { background: #00695C; }
+
+
+  .container{
+
+  }
+
+
+  .comments{
+    font-size: 1.6rem;
+    color: white;
+    padding: 15px;
+    margin-left: 5%;
+  }
