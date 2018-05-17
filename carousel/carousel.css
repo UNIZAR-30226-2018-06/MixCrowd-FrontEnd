@@ -1,5 +1,10 @@
+body {
+  background: #0a1a24;
+  
+}
+
 .carousel{
-    background: #2f4357;
+    background: rgba(85, 85, 85, 0.3);/*rgba(7, 20, 27, 0.8);*/
     margin-top: 20px;
 }
 .carousel .item{
@@ -18,6 +23,5 @@
 
 .carousel-caption {
     background-color: rgba(85, 85, 85, 0.65);
-
-
 }
+
