@@ -1,5 +1,6 @@
 body {
-    padding-top: 50px;
+    background: #0a1a24;
+    color: #ffffff;
 }
 .dropdown.dropdown-lg .dropdown-menu {
     margin-top: -1px;
@@ -30,19 +31,41 @@ body {
 }
 
 .containerList {
-    padding-top: 300px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.list-group {
+    margin-right: 20px;
+}
+
+.containerList {
+    margin-right: 20px;
 }
 
 .list-group-item {
-    padding-left: 50px;
+    border-radius: 7px;
+    width: 260px;
+    height: 200px;
+    padding-left: 30px;
+    float: left;
+    margin-right: 6px;
+    margin-top: 8px;
+    background: rgba(185, 185, 185, 0.7);
 }
 
- .list-group-item img{
+.list-group-item h4{
+    color: #171717;
+}
+
+.list-group-item h5{
+    color: #171717;
+}
+
+.list-group-item img{
     width: 100px;
     height: 100px;
-    margin-left: 200px;
 }
 
 @media screen and (min-width: 768px) {
