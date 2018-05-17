@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MixCrowd</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="busqueda.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../carousel/carousel.html">MixCrowd</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="../carousel/carousel.html">HOME</a></li>
+            <li><a href="#">STUDIO</a></li>
+            <li><a href="../busqueda/busqueda.html">EXPLORE</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> User</a></li> -->
+            <li><a href="../signUp/index.html"><span class="glyphicon glyphicon-log-in"></span> Sign</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="search">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+            <div class="input-group" id="adv-search">
+                <input type="text" class="form-control" placeholder="Search" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form">
+                                  <div class="form-group">
+                                    <label for="filter">Filter by</label>
+                                    <select class="form-control">
+                                        <option value="0" selected>All Snippets</option>
+                                        <option value="1">Featured</option>
+                                        <option value="2">Most popular</option>
+                                        <option value="3">Top rated</option>
+                                        <option value="4">Most commented</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="filter">Category</label>
+                                    <select class="form-control">
+                                        <option value="0" selected>All Categories</option>
+                                        <option value="1">Pop</option>
+                                        <option value="2">Rock</option>
+                                        <option value="3">Latin</option>
+                                        <option value="4">Hip-Hop</option>
+                                        <option value="5">Jazz</option>
+                                        <option value="6">Indie</option>
+                                        <option value="7">Raggae</option>
+                                        <option value="8">Clasical</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Title</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Author</label>
+                                    <input class="form-control" type="text" />
+                                  </div>
+                                  <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+	</div>
+</div>
+
+<div class="containerList">
+  <h2>Search Results</h2>
+
+      <a href="../mezclador/index.html" class="list-group-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Jazz_cellular.PNG" alt="Second Slide">
+          <h4>Proyecto 1</h4>
+          <h5>Description project el diego es tonto y los sabe, los porros no dan la felicidad</h5>
+      </a>
+
+      <a href="../mezclador/index.html" class="list-group-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Jazz_cellular.PNG" alt="Second Slide">
+          <h4>Proyecto 1</h4>
+          <h5>Description project el diego es tonto y los sabe, los porros no dan la felicidad</h5>
+      </a>
+      <a href="../mezclador/index.html" class="list-group-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Jazz_cellular.PNG" alt="Second Slide">
+          <h4>Proyecto 1</h4>
+          <h5>Description project el diego es tonto y los sabe, los porros no dan la felicidad</h5>
+      </a>
+      <a href="../mezclador/index.html" class="list-group-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Jazz_cellular.PNG" alt="Second Slide">
+          <h4>Proyecto 1</h4>
+          <h5>Description project el diego es tonto y los sabe, los porros no dan la felicidad</h5>
+      </a>
+      <a href="../mezclador/index.html" class="list-group-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Jazz_cellular.PNG" alt="Second Slide">
+          <h4>Proyecto 1</h4>
+          <h5>Description project el diego es tonto y los sabe, los porros no dan la felicidad</h5>
+      </a>
+
+
+</div>
+
+</body>
