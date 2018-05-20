@@ -14,10 +14,10 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="../carousel/carousel.html">MixCrowd</a>
+      <a class="navbar-brand" href="../../../Documents/GitHub/MixCrowd-FrontEnd/carousel/carousel.html">MixCrowd</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="../carousel/carousel.html">HOME</a></li>
+      <li><a href="../../../Documents/GitHub/MixCrowd-FrontEnd/carousel/carousel.html">HOME</a></li>
       <li><a href="../Studio/studio.html">STUDIO</a></li> <!-- NO ES ACCESIBLE SI NO ESTA LOGUEADO -->
       <li><a href="../busqueda/busqueda.html">EXPLORE</a></li>
     </ul>
@@ -81,7 +81,7 @@
 
   <br>
   <div> <h2> <label id="seleccionarTodo" for="selectFile">Seleccionar Canción</label> </h2> </div>
-  <input id="selectFile" type="file" accept="audio/*" onclick="add_li()" value="anadir">                                       <!-- No es onClick -->
+  <input id="selectFile" type="file" accept="audio/*" onchange="add_li()" value="anadir">                                       <!-- No es onClick -->
 
   <div class="album-tracks">
     <ol id="lista">
@@ -101,7 +101,7 @@
         <span>0:28  &nbsp;&nbsp;<input type="checkbox" id="test4" checked="checked"/> <label for="test4">Play</label>
         <button class="erasebutton" onclick= "removeName('li4')"> ❌ </button>
         </span></li>
-      <li id="li5"> <span>Vocales</span>
+      <li id="li5">" <span>Vocales</span>
         <span>1:35  &nbsp;&nbsp;<input type="checkbox" id="test5" checked="checked"/> <label for="test5">Play</label>
         <button class="erasebutton" onclick= "removeName('li5')"> ❌ </button>
         </span></li>

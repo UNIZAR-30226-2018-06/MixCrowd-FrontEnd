@@ -113,13 +113,15 @@ document.querySelector("#selectFile").addEventListener('change', function (ev) {
 //// Añadir a la lista ///////////////////////////////////////////////////////////////
 function add_li()
 {
-
-    var nuevoLi=document.getElementById("selectFile").value;
+   // var file = document.forms['formName']['inputName'].files[0];
+    var nuevoLi = document.getElementById('selectFile').files[0];
+    //var nuevoLi=document.getElementById("selectFile").value;
+    debugger;
     var el = document.getElementById("lista").getElementsByTagName("li");
     var id = el.length + 1;
     var aux= "";
     var final = "";
-    var duracion = nuevoLi.duration;
+    var duracion = document.getElementById('selectFile').files[0].duration;
     for (i=0; i<nuevoLi.length; i++){
             if (nuevoLi[i] == '\\'){
                 aux = "";
@@ -142,6 +144,7 @@ function add_li()
             // error de archivo ya existe
         }
     }
+
     return false;
 }
 
@@ -156,3 +159,25 @@ function find_li(contenido)
     }
     return true;
 }
+
+
+////////////////////////////////////////////////////generar lista pistas////////////////////////////////////////////////
+
+
+
+function create_list(id){
+    var pistas =0; //funcion flask que devuelve la lista de pistas
+}
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
