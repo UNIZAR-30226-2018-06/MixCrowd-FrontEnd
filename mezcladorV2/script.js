@@ -114,7 +114,7 @@ document.querySelector("#selectFile").addEventListener('change', function (ev) {
 function add_li()
 {
    // var file = document.forms['formName']['inputName'].files[0];
-    var nuevoLi = document.getElementById('selectFile').files[0];
+    var nuevoLi = document.getElementById('selectFile').files[0].name;
     //var nuevoLi=document.getElementById("selectFile").value;
     debugger;
     var el = document.getElementById("lista").getElementsByTagName("li");
@@ -164,11 +164,69 @@ function find_li(contenido)
 ////////////////////////////////////////////////////generar lista pistas////////////////////////////////////////////////
 
 
-
-function create_list(id){
-    var pistas =0; //funcion flask que devuelve la lista de pistas
+/*
+function loadPro() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            myFunction(this);
+        }
+    };
+    xmlhttp.open("POST", "http://127.0.0.1:5000/getProjectsUser", true);
+    xmlhttp.send();
 }
 
+function myFunction(xml) {
+    var i;
+    var xmlDoc = xml.responseXML;
+
+    /*
+    var list="<div class=\"container\">"+
+        "<h1 style=\"color: rgba(177,79,7,0.69)\">Project1</h1>"+
+        "<div class=\"dropdown\">"+
+        "<button class=\"dropbtn\">Info</button>"+
+        "<div class=\"dropdown-content\">"+
+        "<a href=\"#myModal1\" data-toggle=\"modal\">Users</a>"+
+        "<a href=\"#myModal1\" data-toggle=\"modal\">Description</a>"+
+        "<a href=\"#myModal1\" data-toggle=\"modal\">Style</a>"+
+        "</div>"+
+        "</div>"+
+        "<div class=\"modal fade\" id=\"myModal1\" role=\"dialog\">"+
+        "<div class=\"modal-dialog\">
+    "<div class=\"modal-content\">"+
+    "<div class=\"modal-header\">"+
+    "<button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>"+
+    "<h4 class=\"modal-title\">Modal Header</h4>"+
+    "</div>"+
+    "<div class=\"modal-body\">"
+    <p>Some text in the modal.</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        <img src="https://image.freepik.com/free-vector/circle-made-of-music-instruments_23-2147509304.jpg" style="width:100%" style="border-radius:50%;">
+        <button class="btn1">Entrar</button>
+        <button class="btn">Eliminar</button>
+        </div>";*/
+/*
+    var list = "<span>"+nuevoLi+"</span> <span>"+duracion+"  &nbsp;&nbsp;<input type=\"checkbox\" id=\"" +id+"l"+
+        "\"/> <label for=\"" +id+"l"+ "\">Play</label> <button class=\"erasebutton\" onclick= \"removeName(" +id+
+        ")\"> ❌ </button> </span>";
+    var x = xmlDoc.getElementsByTagName("CD");
+    for (i = 0; i <x.length; i++) {
+        table += "<tr><td>" +
+            x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+            "</td><td>" +
+            x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+            "</td></tr>";
+    }
+    document.getElementById("listaProyectos").innerHTML = list;
+}
+*/
 
 
 
