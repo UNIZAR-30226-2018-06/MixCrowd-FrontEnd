@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap</title>
+  <title>Project</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,13 +17,15 @@
       <a class="navbar-brand" href="../carousel/carousel.html">MixCrowd</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="../carousel/carousel.html">HOME</a></li>
+      <li><a href="../carousel/carousel.html">HOME</a></li>
       <li><a href="#">STUDIO</a></li>
       <li><a href="../busqueda/busqueda.html">EXPLORE</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> User</a></li> -->
-      <li><a href="../signUp/index.html"><span class="glyphicon glyphicon-log-in"></span> Sign</a></li>
+      <!--
+      <li><a href="../Config/index.html"><span class="glyphicon glyphicon-user"></span> User</a></li> <!-- -->
+      <!-- CAMBIAR Sign POR Logout  SI ESTA LOGUEADO -->
+      <li><a href="../signUp/index.html"><span class="glyphicon glyphicon-log-in"></span> Sign</a></li> <!-- -->
     </ul>
     <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="input-group">
@@ -79,8 +81,9 @@
 
   <br>
   <div> <h2> <label id="seleccionarTodo" for="selectFile">Seleccionar Canción</label> </h2> </div>
-  <input id="selectFile" type="file" onclick="add_li()" value="anadir">                                       <!-- No es onClick -->
+  <input id="selectFile" type="file" accept="audio/*" onchange="add_li()" onclick="document.getElementById('selectFile').value = ''" value="anadir">
 
+  <audio id="audio"></audio>
   <div class="album-tracks">
     <ol id="lista">
       <li id="li1"> <span>Bajo</span>
