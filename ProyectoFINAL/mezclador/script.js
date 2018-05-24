@@ -124,12 +124,29 @@ function add_li()
     // var file = document.forms['formName']['inputName'].files[0];
     var nuevoLi = document.getElementById('selectFile').files[0].name;
     //var nuevoLi=document.getElementById("selectFile").value;
-    debugger;
     var el = document.getElementById("lista").getElementsByTagName("li");
     var id = el.length + 1;
     var aux= "";
     var final = "";
+    /*var audio = document.createElement('audio');
+    audio.src = "nuevoLi";
+    var duracion = audio.duration;*/
+    /*var audio = new Audio("cosa.mp3");
+    audio.src=document
+    duracion = audio.duration;*/
+    /*var sound = document.createElement("audio");
     debugger;
+    sound.src=window.URL.createObjectURL(document.getElementById('selectFile').files[0]);
+    sound.load();
+    debugger;
+    var duracion = sound.duration;
+    debugger;
+    window.URL.revokeObjectURL(sound.src);+/
+    /*var reader =new FileReader();
+    var file = document.getElementById('selectFile').files[0];
+    reader.readAsDataURL(file);
+    var duracion=reader.duration;*/
+    //var duracion=document.getElementById('selectFile').files[0].id3.TLEN;
     var duracion = document.getElementById('selectFile').files[0].duration;
     debugger;
     for (i=0; i<nuevoLi.length; i++){
@@ -148,7 +165,9 @@ function add_li()
         {
             var li=document.createElement('li');
             li.id=id;
-            li.innerHTML="<span>"+nuevoLi+"</span> <span>"+duracion+"  &nbsp;&nbsp;<input type=\"checkbox\" id=\"" +id+"l"+  "\"/> <label for=\"" +id+"l"+ "\">Play</label> <button class=\"erasebutton\" onclick= \"removeName(" +id+ ")\"> ❌ </button> </span>";
+            debugger;
+            li.innerHTML="<span>"+nuevoLi+"</span> <span>Instant<input type=\"time\" id=\"" +id+"inst"+  "\" min=\"00:00:00\" max=\"08:00:00\" step=\"1\"><label for=\"" +id+"inst"+  "\"></label></span><span>Panning <input type=\"range\" id=\"" +id+"pan"+  "\" min=\"0\" max=\"100\" step=\"1\"/><label for=\"" +id+"pan"+  "\"></label></span><span>"+duracion+"  &nbsp;&nbsp;<input type=\"checkbox\" id=\"" +id+"l"+  "\"/> <label for=\"" +id+"l"+ "\">Play</label> <button class=\"erasebutton\" onclick= \"removeName(" +id+ ")\"> ❌ </button> </span>";
+            debugger;
             document.getElementById("lista").appendChild(li);
         } else {
             // error de archivo ya existe

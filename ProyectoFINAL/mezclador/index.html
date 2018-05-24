@@ -83,42 +83,60 @@
   <div> <h2> <label id="seleccionarTodo" for="selectFile">Seleccionar Canción</label> </h2> </div>
   <input id="selectFile" type="file" accept="audio/*" onchange="add_li()" onclick="document.getElementById('selectFile').value = ''" value="anadir">
 
-  
+  <audio id="audio"></audio>
   <div class="album-tracks">
     <ol id="lista">
       <li id="li1"> <span>Bajo</span>
-        <span>1:49  &nbsp;&nbsp;<input type="checkbox" id="test1" /> <label for="test1">Play</label>
+        <span>Instant <input type="time" id="inst1" min="00:00:00" max="08:00:00" step="1" ><label for="inst1"></label></span>
+        <span>Panning <input type="range" id="pan1" min="0" max="100" step="1"/><label for="pan1"></label></span>
+        <span>1:49  &nbsp;<input type="checkbox" id="test1" /> <label for="test1">Play</label>
         <button class="erasebutton" onclick= "removeName('li1')"> ❌ </button>
         </span></li>
       <li id="li2"> <span>BeatBox freestyle</span>
+        <span>Instant <input type="time" id="inst2" min="00:00:00" max="08:00:00" step="1"><label for="inst2"></label></span>
+        <span>Panning <input type="range" id="pan2" min="0" max="100" step="1"/> <label for="pan2"></label></span>
         <span>0:49  &nbsp;&nbsp;<input type="checkbox" id="test2" checked="checked"/> <label for="test2">Play</label>
         <button class="erasebutton" onclick= "removeName('li2')"> ❌ </button>
         </span></li>
       <li id="li3"> <span>Bateria con bombo</span>
+        <span>Instant <input type="time" id="inst3" min="00:00:00" max="08:00:00" step="1"><label for="inst3"></label></span>
+        <span>Panning <input type="range" id="pan3" min="0" max="100" step="1"/> <label for="pan3"></label></span>
         <span>0:47  &nbsp;&nbsp;<input type="checkbox" id="test3" /> <label for="test3">Play</label>
         <button class="erasebutton" onclick= "removeName('li3')"> ❌ </button>
         </span></li>
       <li id="li4"> <span>Guitarra</span>
+        <span>Instant <input type="time" id="inst4" min="00:00:00" max="08:00:00" step="1"><label for="inst4"></label></span>
+        <span>Panning <input type="range" id="pan4" min="0" max="100" step="1"/> <label for="pan4"></label></span>
         <span>0:28  &nbsp;&nbsp;<input type="checkbox" id="test4" checked="checked"/> <label for="test4">Play</label>
         <button class="erasebutton" onclick= "removeName('li4')"> ❌ </button>
         </span></li>
       <li id="li5"> <span>Vocales</span>
+        <span>Instant <input type="time" id="inst5" min="00:00:00" max="08:00:00" step="1"><label for="inst5"></label></span>
+        <span>Panning <input type="range" id="pan5" min="0" max="100" step="1"/> <label for="pan5"></label></span>
         <span>1:35  &nbsp;&nbsp;<input type="checkbox" id="test5" checked="checked"/> <label for="test5">Play</label>
         <button class="erasebutton" onclick= "removeName('li5')"> ❌ </button>
         </span></li>
       <li id="li6"> <span>Caja</span>
+        <span>Instant <input type="time" id="inst6" min="00:00:00" max="08:00:00" step="1"><label for="inst6"></label></span>
+        <span>Panning <input type="range" id="pan6" min="0" max="100" step="1"/> <label for="pan6"></label></span>
         <span>0:18  &nbsp;&nbsp;<input type="checkbox" id="test6" /> <label for="test6">Play</label>
         <button class="erasebutton" onclick= "removeName('li6')"> ❌ </button>
         </span></li>
       <li id="li7"> <span>Flauta loop</span>
+        <span>Instant <input type="time" id="inst7" min="00:00:00" max="08:00:00" step="1"><label for="inst7"></label></span>
+        <span>Panning <input type="range" id="pan7" min="0" max="100" step="1"/> <label for="pan7"></label></span>
         <span>1:24  &nbsp;&nbsp;<input type="checkbox" id="test7" /> <label for="test7">Play</label>
         <button class="erasebutton" onclick= "removeName('li7')"> ❌ </button>
         </span></li>
       <li id="li8"> <span>Violin</span>
+        <span>Instant <input type="time" id="inst8" min="00:00:00" max="08:00:00" step="1"><label for="inst8"></label></span>
+        <span>Panning <input type="range" id="pan8" min="0" max="100" step="1"/> <label for="pan8"></label></span>
         <span>2:00  &nbsp;&nbsp;<input type="checkbox" id="test8" checked="checked"/> <label for="test8">Play</label>
         <button class="erasebutton" onclick= "removeName('li8')"> ❌ </button>
         </span></li>
       <li id="li9"> <span>Electro Base</span>
+        <span>Instant <input type="time" id="inst9" min="00:00:00" max="08:00:00" step="1"><label for="inst9"></label></span>
+        <span>Panning <input type="range" id="pan9" min="0" max="100" step="1"/> <label for="pan9"></label></span>
         <span>0:16  &nbsp;&nbsp;<input type="checkbox" id="test9" checked="checked"/> <label for="test9">Play</label>
         <button class="erasebutton" onclick= "removeName('li9')"> ❌ </button>
         </span></li>

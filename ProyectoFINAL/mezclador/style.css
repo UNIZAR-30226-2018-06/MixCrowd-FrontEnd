@@ -260,4 +260,6 @@ ol li span:first-child:before {
   flex: 1 1 100%;
 }
 
-
+span{
+  width: 24%;
+}
