@@ -117,7 +117,16 @@ document.querySelector("#selectFile").addEventListener('change', function (ev) {
 });
 
 /////////////////////////////////////////////////////////////////////////////////// hasta ui button choose
-
+function existeID(num)
+{
+    var el = document.getElementById("lista").getElementsByTagName("LI");
+    for (var i=0; i<el.length; i++)
+    {
+        if(el[i].firstElementChild.id==num)
+            return true;
+    }
+    return false;
+}
 //// Añadir a la lista ///////////////////////////////////////////////////////////////
 function add_li()
 {
@@ -125,7 +134,11 @@ function add_li()
     var nuevoLi = document.getElementById('selectFile').files[0].name;
     //var nuevoLi=document.getElementById("selectFile").value;
     var el = document.getElementById("lista").getElementsByTagName("li");
-    var id = el.length + 1;
+    //var id = el.length + 1;
+    var id=Math.floor(Math.random()*65535+1);
+    while (existeID(id)===true){
+        id = Math.floor(Math.random()*65535+1);
+    }
     var aux= "";
     var final = "";
     /*var audio = document.createElement('audio');
